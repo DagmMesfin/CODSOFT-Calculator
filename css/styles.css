@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Seat-Regular';
+    src: url('../font/digital-7.ttf') format('truetype');
+  }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap");
+  
+body{
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(135deg,#749EFF, #7D869B);
+}
+
+.container{
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.733);
+
+    
+}
+.keys{
+    padding: 10px 12px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(4, 0.5fr);
+    
+}
+.num_display{
+    margin: 10px;
+    padding: 0px 20px;
+    width:85%;
+    height: 75px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    color:rgb(22, 22, 22);
+    pointer-events: none;
+    font-family: 'Seat-Regular';
+
+}
+
+.keys button{
+    padding: 12px , 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
+    color: whitesmoke;
+    cursor: pointer;
+    background-image: linear-gradient(135deg,#ffb574, #5b698a);
+    
+}
+
+.keys button:active{
+    transform: scale(0.96);
+
+}
+
+.credit {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .credit p {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .credit p img {
+    height: 30px;
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
+  }
